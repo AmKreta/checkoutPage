@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		container: {
 			width: "300px",
-			height: "250px",
+			minHeight: "250px",
 			border: '1px solid #ccc',
 			boxShadow: '0 0 1px #ccc',
 		},
@@ -57,7 +57,7 @@ const Orders: React.FC<{}> = () => {
 					</Typography>
 				</Grid>
 				<Grid item xs={12} className={clsx(classes.gridItem)}>
-					<Typography variant='subtitle1' color='textSecondary' style={{width:'100px'}}>
+					<Typography variant='subtitle1' color='textSecondary' >
 						Items({numItems})
 					</Typography>
 					<Typography variant='subtitle1' color='textSecondary'>
@@ -69,7 +69,7 @@ const Orders: React.FC<{}> = () => {
 				</Grid>
 				<Grid container item xs={12}>
 					<Grid item xs={12} className={clsx(classes.gridItem)}>
-						<Typography variant='subtitle1' color='textSecondary' style={{width:'100px'}}>
+						<Typography variant='subtitle1' color='textSecondary' >
 							Discount
 						</Typography>
 						<Typography variant='subtitle1' color='textSecondary'>
@@ -80,7 +80,7 @@ const Orders: React.FC<{}> = () => {
 						</Typography>
 					</Grid>
 					<Grid item xs={12} className={clsx(classes.gridItem)}>
-						<Typography variant='subtitle1' color='textSecondary' style={{width:'100px'}}>
+						<Typography variant='subtitle1' color='textSecondary'>
 							Type discount
 						</Typography>
 						<Typography variant='subtitle1' color='textSecondary'>
