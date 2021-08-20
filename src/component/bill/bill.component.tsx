@@ -57,7 +57,7 @@ const Orders: React.FC<{}> = () => {
 					</Typography>
 				</Grid>
 				<Grid item xs={12} className={clsx(classes.gridItem)}>
-					<Typography variant='subtitle1' color='textSecondary'>
+					<Typography variant='subtitle1' color='textSecondary' style={{width:'100px'}}>
 						Items({numItems})
 					</Typography>
 					<Typography variant='subtitle1' color='textSecondary'>
@@ -69,7 +69,7 @@ const Orders: React.FC<{}> = () => {
 				</Grid>
 				<Grid container item xs={12}>
 					<Grid item xs={12} className={clsx(classes.gridItem)}>
-						<Typography variant='subtitle1' color='textSecondary'>
+						<Typography variant='subtitle1' color='textSecondary' style={{width:'100px'}}>
 							Discount
 						</Typography>
 						<Typography variant='subtitle1' color='textSecondary'>
@@ -80,7 +80,7 @@ const Orders: React.FC<{}> = () => {
 						</Typography>
 					</Grid>
 					<Grid item xs={12} className={clsx(classes.gridItem)}>
-						<Typography variant='subtitle1' color='textSecondary'>
+						<Typography variant='subtitle1' color='textSecondary' style={{width:'100px'}}>
 							Type discount
 						</Typography>
 						<Typography variant='subtitle1' color='textSecondary'>
