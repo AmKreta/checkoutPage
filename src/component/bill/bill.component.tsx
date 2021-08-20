@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		container: {
 			width: "300px",
-			minHeight: "250px",
+			height: "280px",
 			border: '1px solid #ccc',
 			boxShadow: '0 0 1px #ccc',
 		},
