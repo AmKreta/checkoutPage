@@ -61,13 +61,13 @@ const Orders: React.FC<{}> = () => {
     const element = e.currentTarget as HTMLButtonElement;
     const itemId: number = parseInt(element.getAttribute('data-itemId')!);
     dispatch(addItem(itemId));
-  }, [dispatch, setSnackBarState]);
+  }, [dispatch]);
 
   const removeHandler = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
     const element = e.currentTarget as HTMLButtonElement;
     const itemId: number = parseInt(element.getAttribute('data-itemId')!);
     dispatch(removeItem(itemId));
-  }, [dispatch, setSnackBarState]);
+  }, [dispatch]);
 
   const deleteHandler = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
     const element = e.currentTarget as HTMLButtonElement;
